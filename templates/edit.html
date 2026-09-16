@@ -1,0 +1,58 @@
+x<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css" >
+      <style>
+         input {
+               font-size: 6px;}
+         body {
+    background-color: #051229;
+
+    /* Glow focused near the bottom (50% horizontally, 100% vertically) */
+    background-image: radial-gradient(
+         ellipse at 0% 50%,
+
+       #163264 60%,
+
+      #fc4e03  40%,
+    
+      transparent 70%
+    );
+
+   min-height: 100vh;
+    margin: 0;
+              }
+
+
+    </style>
+
+    <title>Snacks List</title>
+</head>
+<body>
+    <h2>edit items </h2>
+
+   <form action="{{url_for('add', df=item.id)}}"  method= "POST" >
+
+    <label>firstname</label>
+      <input type="text" name="firstname" value="{{item.firstname}}" >
+
+    <label>lastname</label>
+      <input type="text" name="lastname" value="{{item.lastname}}" >
+
+
+      <input type="submit" name="Save changes"  onclick=handlelick()>
+    </form>
+
+    <a href="{{url_for('form')}}"> edit table </a>
+   
+    <div class="clicker" onclick=handlelick() >  click here </div>
+  
+
+<script> 
+       function handlelick() { alert("sucessfull")}
+</script>
+
+</body>
+</html>

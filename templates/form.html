@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}Edit List{% endblock %}
+{% block content %}
+    <h2>Edit List</h2>
+  <ul class="form">
+        {% for x in table %}
+    <li>
+      <a href="{{ url_for('index', id=x.id) }}">{{ x.firstname }} {{ x.lastname }}</a>
+      <a href="{{ url_for('delete', id=x.id) }}" >delete</a>
+       <a href="{{ url_for('make',   user=x.id) }}"> excuses</a>
+    </li>
+        {% endfor %}
+   </ul>
+   <br>
+    <a href="{{ url_for('home') }}">back</a>
+    
+   
+{% endblock %}

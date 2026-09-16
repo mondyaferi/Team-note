@@ -1,0 +1,206 @@
+
+body {
+    background-image: url("../images/sample.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: black;
+}
+    
+ 
+ul { list-style:none; margin-right:16px ; display: block;
+      gap: 10px 20px;
+   
+   }
+
+
+li {color:red; font-weight:bold; padding:6px; border: 1px solid green;background:pink;
+     margin-bottom:6px; text-align:center;
+
+  }
+
+
+a {background:black; color:white; padding:5px; margin-left:18px;border-radius: 50%; 
+
+}
+
+a:hover { background:#163264; color:back}
+
+
+nav { display:flex}
+
+label { display:block; padding:6px; background: rgb(20,50,120); margin-right:40%; font-family:'Segoe UI', Roboto, Arial sans-serif;font-weight:bold; font-size:18px }
+
+
+input {display:block; padding:6px; background:yellow; text-align:center; font-weight:bold; font-size:23px;}
+
+
+input[type=submit] { margin-left:; background:blue;  }  
+    
+
+
+.form {
+    background: red;
+}
+
+.login { display:block; align-items:center; 
+
+
+}
+
+
+/* Container Centering */
+.login-wrapper {
+  display: flex;
+  justify-content:center;
+  align-items:  center;
+  min-height: 80vh;
+  padding: 20px;
+  box-sizing:border-box;
+  box-sizing:border-box;
+  border: 2px solid rgba(0, 12, 45, 0.05); 
+  width: 100%
+}
+
+/* Glassmorphism Card using #000C2D with high transparency */
+.login {
+  background:rgba(0, 12, 45, 0.35); /* #000C2D converted to RGB with high transparency */
+ backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15); 
+/*border: 2px solid red; */
+  border-radius: 20px;
+  padding: 35px 25px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+/* Icon */
+.user-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px auto; 
+}
+
+.login h2 {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+}
+
+/* Bold Red} Warning Message Inside Form */
+#warning {
+  color: #ff4d4d;
+  font-weight: bold;
+  font-size: 14px;
+  margin: -10px 0 15px 0;
+  text-shadow: 1 1px 3px rgba(0, 0, 0, 0.5);
+  font-style: italic;
+} 
+
+/* Input Fields 📌*/
+.input-group {
+  margin-bottom: 2px;
+  width: 100%;
+  /*border:8px solid green;*/
+}
+
+.login input[type="text"],
+.login input[type="password"], #put {
+  width: 100%;
+  background:transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 10px 0;
+  color: #ffffff;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+  
+}
+
+.login input[type="text"]::placeholder,
+.login input[type="password"]::placeholder, .labs {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.login input[type="text"]:focus,
+.login input[type="password"]:focus {
+  border-bottom-color: #ffffff;
+}
+
+/* Button Positioning & Styling 📌*/
+.button-wrapper {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  border: 8px solid red
+}
+
+.login input[type="submit"] {
+  width: 100%;
+  background: #ffffff;
+  color: #000c2d;
+  border: 8px solid rgba(16, 21, 46, );
+  border-radius: 30px;
+  padding: 12px 0;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+  
+}
+
+.login input[type="submit"]:hover {
+  background: #e2e8f0;
+}
+
+.login input[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+
+
+.newdata { display:flex; align-items:center; justify-content: center;
+   min-height: 80vh;   margin:6px; padding:15px; box-sizing:border-box;
+}
+
+
+.addnew { border:2px dotted #6A6572;
+    background: rgba(0, 12, 45, 0.55); 
+     border-radius:20px;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+.addnew input[type="text"] { background: rgba(0, 12, 45, 2.35); border-radius:5px; margin-bottom:15px; width:100%; box-sizing:border-box; color:white; text-align:center;
+}
+
+.addnew label {background: rgba(0, 0, 0, 1.35); color:white; font-family:Arial; margin:0; width:100%; box-sizing:border-box; border-radius:20px 
+
+}
+
+.addnew input[type="submit"] { background:white; width:100%; display:block; border-radius:30px;
+}
+
+.addnew input[type="text"]::placeholder {
+  color: rgba(255, 255, 255, 0.6); font-size:13px;
+
+}
+
+.wtf-div {border:2px solid red;}
+
+.wtf { border:#163264 solid 2px;}

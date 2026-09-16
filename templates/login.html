@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<div class="login-wrapper">
+  <form class="login" action="{{ url_for('login') }}" method="POST">
+    <div class="user-icon">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+        <circle cx="12" cy="7" r="4"></circle>
+      </svg>
+    </div>
+    
+    <h2>Login</h2>
+
+    {% if status=="status" %}
+         <p id="warning">wrong credential</p>
+    {% endif %}
+    <div class="input-group">
+
+      <input type="text" name="username" id="logs" placeholder="Username" required>
+    </div>
+
+    <div class="input-group">
+      <input type="password" name="passward" id="logs" placeholder="Password" required>
+    </div>
+
+    <input type="submit" value="LOG IN" id="sub">
+  </form>
+</div>
+
+{% endblock %}
+

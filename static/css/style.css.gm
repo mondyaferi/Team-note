@@ -1,0 +1,53 @@
+/* Define the variables and allow them to animate */
+@property --color1 {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: orange;
+}
+
+@property --color2 {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: red;
+}
+
+body {
+  background-color: #051229;
+  background-image: radial-gradient(
+    ellipse at 0% 50%,
+    #163264 60%,
+    var(--color1), 
+    var(--color2) 40%,
+    transparent 70%
+  );
+  min-height: 100vh;
+  margin: 0;
+  
+  /* Link the animation here: 5 seconds, loops forever, smooth transition */
+  animation: shiftColors 2s ease-in-out infinite alternate;
+}
+
+/* Define the color changes over time */
+@keyframes shiftColors {
+  0% {
+    --color1: orange;
+    --color2: red;
+  }
+  50% {
+    --color1: #ff007f; /* Hot pink */
+    --color2: #7f00ff; /* Purple */
+  }
+  70% {
+    --color1: #00ffcc; /* Cyan */
+    --color2: #0000ff; /* Blue */
+  }
+  100% {
+    --color1: green
+    --color2: rgb(203,30,33)
+
+}
+
+
+.content { bagckground: blue;}
+
+.item { color:red;}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %} reasons {% endblock %}
+
+{% block content %}
+
+  <div>
+    <ul>
+      {% for y in res %}
+         <li> | {{y.reason}}| <a href=#> edit</a> | <a href="{{url_for('excdel', excid=y.id, user=user)}}">delete</a> 
+          </li>
+       {% endfor %}
+    </ul>
+  </div>
+   <div>
+<a href="{{url_for('excd', user=user)}}">add </a>
+  
+<a href="{{url_for('form')}}"> back </a>
+   </div>
+ {% endblock %}
+      

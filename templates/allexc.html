@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<div>
+<ul>
+  {% for excu in excall %}
+ 
+  <li>
+      {{ excu.reason}}    
+  
+  </li>
+{% endfor %}
+  
+</ul>
+</div>
+
+<div>
+   <a href="{{url_for('home')}}" >  back </a>  
+  
+</div>
+
+{% endblock %}

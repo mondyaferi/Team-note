@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Snacks List{% endblock %}
+
+
+{% block content %}
+   <div class="content">
+     <h2>Present List {{table[1]}}</h2>
+      <ul>
+       {% for x in table %}
+        <li class="item" > <a href="{{url_for('make', user=x.id)}}"> {{ x.firstname}}  {{ x.lastname }} </a> </li>
+       {% endfor %}
+      </ul>
+   <nav>
+    <a href="{{url_for('form')}}"> edit list </a> <br>
+    <a href="{{url_for('add', df=0)}}"> add item </a>
+     <a href="{{url_for('allexc')}}"> see all post </a> <br
+   </nav>
+  </div>
+
+{% endblock %}

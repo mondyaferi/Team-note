@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+   
+   {% block title %}
+   A mathematic calculator
+   {% endblock %}
+
+   {% block content %}     
+    <h1>  the maths cal </h1>
+
+    <form action="/math" method= "POST" >
+       <label> number 1 </label>
+       <input type="number" name= "num1">
+
+        <label> nymber 2</label>
+        <input type="number" name= "num2">
+        <select name="opera" >
+
+            <option value="sub"> subraction </option>
+            <option value="add"> addtion </option>
+            <option value="mul"> multiplication </option>
+            <option value="div"> division </option>
+        </select>
+      
+         <input type="submit" value="Submit Form">
+    </form> 
+   {% endblock %}

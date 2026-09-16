@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %} Excuses {% endblock %}
+
+{% block content %}
+<div class="wtf-div">
+   <form class='wtf'  action="{{url_for('excd', user=user)}}" method="POST"> 
+     {{ form.hidden_tag() }}
+
+{{ form.reason.label(class="labs") }} <br>
+{{ form.reason(id="put") }}
+
+<br>
+
+{{ form.submit() }}
+
+{% for error in form.reason.errors %}
+    {{ error }}
+{% endfor %}
+   
+
+</div>
+
+{% endblock %}
